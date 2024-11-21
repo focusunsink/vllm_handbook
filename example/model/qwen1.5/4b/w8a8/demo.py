@@ -14,7 +14,7 @@ from llmcompressor.modifiers.quantization import GPTQModifier
 from llmcompressor.modifiers.smoothquant import SmoothQuantModifier
 
 # Model configuration
-MODEL_ID = "./Qwen1.5-4B-Chat"
+MODEL_ID = "Qwen1.5-4B-Chat"
 
 """
 Step 1: Create the model and tokenizer
