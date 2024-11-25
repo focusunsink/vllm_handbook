@@ -1,18 +1,20 @@
 from vllm import LLM, SamplingParams
 from transformers import AutoTokenizer
-import torch 
-import time 
+import torch
+import time
 import sys
 print('args lens', len(sys.argv))
-print('input len', sys.argv[1])
+print("model is : ", sys.argv[1])
+print('input len', sys.argv[2])
 
-model_path="Qwen2.5-3B"
+
+model_path=sys.argv[1]
 tokenizer = AutoTokenizer.from_pretrained(model_path)
 
 prompts = [
     "The future of AI is",
 ]
-test_len=int(sys.argv[1])
+test_len=int(sys.argv[2])
 prompt_token_ids=tokenizer.encode(prompts[0])
 print(len(prompt_token_ids))
 prompt_token_ids=prompt_token_ids*(test_len // len(prompt_token_ids))
