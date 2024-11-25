@@ -1,4 +1,4 @@
-vllm==0.6.3
+vllm==0.6.4.post1
 urllib3==1.26.16
-torch==2.4.0
-flashinfer=1.6.0
+torch==2.5.1
+flashinfer==1.6.0
