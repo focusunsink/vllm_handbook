@@ -3,5 +3,6 @@
 # time used :  0.3717203140258789 avg used 0.007148467577420748
 
 nsys profile \
---stats=true -o qwen2.5_3b_bf16.nsys-rep -ftrue -t cuda,nvtx --delay=5 \
+-o qwen2.5_3b_bf16.nsys-rep  -t cuda,nvtx --delay=5 \
+-ftrue \
 python3 demo.py ../Qwen2.5-3B/ 6000
